@@ -215,9 +215,8 @@ def get_text_from_image(image , fast = True) :
         image.save('Image.jpg')
 
         reader = easyocr.Reader(['en'])
+        
         text = reader.readtext('Image.jpg')
-
-        st.write('Image Saved')
         
         text = [
             val[1]
