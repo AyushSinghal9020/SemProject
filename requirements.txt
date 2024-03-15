@@ -3,3 +3,5 @@ streamlit
 easyocr
 google
 gtts
+google-generativeai
+google-ai-generativelanguage
