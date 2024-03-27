@@ -13,7 +13,7 @@ def project() :
     Returns:
     '''
 
-    image = st.file_uploader('Upload an image' , type = ['jpg' , 'jpeg' , 'png'])
+    image = st.file_uploader('Upload an image' , type = ['jpg' , 'jpeg' , 'png' , 'webp'])
 
     if image :
 
