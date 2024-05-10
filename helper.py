@@ -226,8 +226,6 @@ def get_text_from_image(image , fast = True) :
 
         text = ' '.join(text)
 
-        st.write('Extracted Images , Please wait for the analysis')
-
         genai.configure(api_key = 'AIzaSyCbha5sM13om7UPDPgQmDpPpxNyC0-go3I')
         model = genai.GenerativeModel('gemini-pro')
 
