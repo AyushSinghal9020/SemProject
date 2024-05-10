@@ -228,7 +228,7 @@ def get_text_from_image(image , fast = True) :
 
         st.write('Extracted Images , Please wait for the analysis')
 
-        genai.configure(api_key = 'AIzaSyDyaY8u-BdM_IxU_YbJ5n4JLHy6A4uvxOE')
+        genai.configure(api_key = 'AIzaSyCbha5sM13om7UPDPgQmDpPpxNyC0-go3I')
         model = genai.GenerativeModel('gemini-pro')
 
         prompt = f'''
@@ -264,7 +264,7 @@ def get_text_from_image(image , fast = True) :
 
         text = ' '.join(text)
 
-        genai.configure(api_key = st.secrets['API_KEY'])
+        genai.configure(api_key = 'AIzaSyCbha5sM13om7UPDPgQmDpPpxNyC0-go3I')
         model = genai.GenerativeModel('gemini-pro')
 
         prompt = f'''
