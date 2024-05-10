@@ -17,11 +17,14 @@ def project() :
 
     if image :
 
-        text = get_text_from_image(image)
+        with st.spinner('Extracting and Analysing Text from the Image, Please Hang Tight !!') : 
+
+            text = get_text_from_image(image)
 
         st.write(text)
 
-        get_speech_from_text(text)
+        with st.spinner('Getting Text to Speech') : 
+            get_speech_from_text(text)
 
         st.audio('audio.wav' , format = 'audio/wav')
 
